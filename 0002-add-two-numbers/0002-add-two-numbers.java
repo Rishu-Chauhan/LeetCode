@@ -19,10 +19,12 @@ class Solution {
             int sum=carry;
             if(t1!=null){
                 sum=sum+t1.val;
+             //   t1=t1.next;
                 
             }
             if(t2!=null){
                sum= sum+t2.val;
+              //  t2=t2.next;
             }
             ListNode newNode=new ListNode(sum % 10);
             carry=sum/10;
